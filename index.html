@@ -45,7 +45,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Codec Nerf</h1>
+            <h1 class="title is-1 publication-title">CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 Gyeongjin Kang<sup>*</sup>,</span>
@@ -94,7 +94,7 @@
     <div class="hero-body">
       <div class="container">
         <div class=" has-text-centered">
-          <h2 class="title is-3">Objaverse Comparison</h2>
+          <h2 class="title is-3">Performance Comparison on Objaverse Dataset</h2>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-steve">
               <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
@@ -135,7 +135,7 @@
     <div class="hero-body">
       <div class="container">
         <div class=" has-text-centered">
-          <h2 class="title is-3">ShapeNet Comparison</h2>
+          <h2 class="title is-3">Performance Comparison on ShapeNet Dataset</h2>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-steve">
               <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
@@ -215,7 +215,7 @@
               hen, the unproject and aggregation module lifts the 2D features to 3D features and aggregates the unprojected 3D features into a single 3D feature. 
               The 3D feature is further processed by axis-aligned average pooling along each axis, resulting in three 2D features. 
               These 2D features are used to generate multi-resolution triplanes, and finally, we perform the volumetric rendering to render an image using MLP.
-              Furthermore, 2D features are compressed by the compression module, producing the minimal sizes of the codes to be transmitted. The entire pipeline is differentiable, and we train end-to-end to optimize all learnable parameters,</p>
+              Furthermore, 2D features are compressed by the compression module, producing the minimal sizes of the codes to be transmitted. The entire pipeline is differentiable, and we train end-to-end to optimize all learnable parameters.</p>
             <img src="./static/images/PEFT.png">
             <p align="justify">Similar to other NeRF generalization models, our approach can also
               leverage fine-tuning of NeRF representations to enhance visual quality for new
