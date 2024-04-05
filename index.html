@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Codec NeRF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/script.js"></script>
+
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Codec Nerf</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Gyeongjin Kang<sup>*</sup>,</span>
+              <span class="author-block">
+                Younggeun Lee<sup>*</sup>, and </span>
+              <span class="author-block">
+                Eunbyung Park</span>
+
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Sungkyunkwan University</span> <br>
+              <span class="author-block"><sup>*</sup>Equal contribution</span>
+            </div>
+            <div class="column has-text-centered">
+                <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/Gynjn/Codec-NeRF"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class=" has-text-centered">
+          <h2 class="title is-3">Objaverse Comparison</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/objaverse11.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-chair-tp">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/objaverse22.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-shiba">
+              <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/objaverse33.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/objaverse44.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-blueshirt">
+              <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/objaverse55.mp4"
+                        type="video/mp4">
+              </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class=" has-text-centered">
+          <h2 class="title is-3">ShapeNet Comparison</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/chair1.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-chair-tp">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/chair2.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-shiba">
+              <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/chair3.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/car1.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-toby">
+              <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/car2.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-toby">
+              <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/car3.mp4"
+                        type="video/mp4">
+              </video>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+    <!-- abstract -->
+    <p class="title is-3 mt-5 has-text-centered"> Abstract </p>
+    <p class="content is-size-6 has-text-left">
+      Neural Radiance Fields (NeRF) have achieved huge success in effectively capturing and representing 3D objects and scenes. 
+      However, several factors have impeded its further proliferation as next-generation 3D media. 
+      To establish a ubiquitous presence in everyday media formats, such as images and videos, it is imperative to devise a solution that effectively fulfills three key objectives: fast encoding and decoding time, compact model sizes, and high-quality renderings. 
+      Despite significant advancements, a comprehensive algorithm that adequately addresses all objectives has yet to be fully realized. 
+      In this work, we present <b>CodecNeRF</b>, a neural codec for NeRF representations, consisting of a novel encoder and decoder architecture that can generate a NeRF representation in a single forward pass. 
+      Furthermore, inspired by the recent parameter-efficient finetuning approaches, we develop a novel finetuning method to efficiently adapt the generated NeRF representations to a new test instance, leading to high-quality image renderings and compact code sizes. The proposed CodecNeRF, a newly suggested encoding-decoding-finetuning pipeline for NeRF, achieved unprecedented compression performance of more than 150x and 20x reduction in encoding time while maintaining (or improving) the image quality on widely used 3D object datasets, such as ShapeNet and Objaverse.
+    </p>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+    </div>
+  </section>
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Codec NeRF Pipeline</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/overall_arch.png">
+            <p align="justify">Given <b>N</b> input images from different viewpoints, the goal is to produce a <b>NeRF representation</b> (multi-resolution triplanes).
+              First, a 2D image feature extractor module processes all input images and generates 2D feature maps for each input image.
+              hen, the unproject and aggregation module lifts the 2D features to 3D features and aggregates the unprojected 3D features into a single 3D feature. 
+              The 3D feature is further processed by axis-aligned average pooling along each axis, resulting in three 2D features. 
+              These 2D features are used to generate multi-resolution triplanes, and finally, we perform the volumetric rendering to render an image using MLP.
+              Furthermore, 2D features are compressed by the compression module, producing the minimal sizes of the codes to be transmitted. The entire pipeline is differentiable, and we train end-to-end to optimize all learnable parameters,</p>
+            <img src="./static/images/PEFT.png">
+            <p align="justify">Similar to other NeRF generalization models, our approach can also
+              leverage fine-tuning of NeRF representations to enhance visual quality for new
+              scenes during testing time. We propose to adapt parameter-efficient finetuning (PEFT) in our test time optimization.
+              We first generate multi-resolution triplanes using
+              multi-view test images, and train only the triplanes and decoder in a efficient way.
+              Also, we leverage neural compression methods that have demonstrated efficacy in
+              image and video domains to seek to achieve the optimal compression rate. We adopt a fully factorized density model to our proposed
+              parameter-efficient finetuning of the triplanes and MLP.              
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Comparison of optimization speed and compression degree</h2>
+					<img src="./static/images/fixed.jpg" style="width:100%">
+
+          <p align="justify">For the quantitative metrics, we report the standard
+            image quality measurements, PSNR, SSIM, and MS-SSIM. We also measure the
+            storage requirements of the representation to show the compression performance
+            of our method. Our parameter efficient methods show that only with 150x memory we can store or transmit the 3D representation with better quality compared
+            to the baseline method. Due to the improved generalization capability of our
+            method, we outperform the per-scene optimization-based baseline, Triplanes,
+            in novel view synthesis. Remarkably, the PEFT method showed comparable or
+            better performance across the data with fewer trainable parameters.
+					</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new BeforeAfter({
+      id: '#example1'
+    });
+    new BeforeAfter({
+      id: '#example2'
+    });
+    new BeforeAfter({
+      id: '#example4'
+    });
+    new BeforeAfter({
+      id: '#example5'
+    });
+
+  </script>
+  
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @misc{lee2024deblurring,
+        title={Deblurring 3D Gaussian Splatting}, 
+        author={Byeonghyeon Lee and Howoong Lee and Xiangyu Sun and Usman Ali and Eunbyung Park},
+        year={2024},
+        eprint={2401.00834},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+      }
+    </code></pre>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org/abs/2401.00834">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website borrowed template from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
