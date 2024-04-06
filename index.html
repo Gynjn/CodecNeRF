@@ -209,7 +209,7 @@
           <h2 class="title is-3">Codec NeRF Pipeline</h2>
           <div class="content has-text-justified">
             <img src="./static/images/overall_arch.png">
-            <p align="justify">Given <b>N</b> input images from different viewpoints, the goal is to produce a <b>NeRF representation</b> (multi-resolution triplanes).
+            <p align="justify">Given N input images from different viewpoints, the goal is to produce a NeRF representation (multi-resolution triplanes).
               First, a 2D image feature extractor module processes all input images and generates 2D feature maps for each input image.
               hen, the unproject and aggregation module lifts the 2D features to 3D features and aggregates the unprojected 3D features into a single 3D feature. 
               The 3D feature is further processed by axis-aligned average pooling along each axis, resulting in three 2D features. 
