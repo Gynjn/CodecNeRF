@@ -117,6 +117,15 @@ body {
 
 }
 
+/* .results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+} */
+
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
@@ -124,6 +133,16 @@ body {
   border-radius: 10px;
   padding: 0;
   font-size: 0;
+  /* Adjust the width and height properties */
+  width: 768px; /* Adjust according to your preference */
+  height: 256px; /* Adjust according to your preference */
+}
+
+/* Optionally, you can set a minimum width and height to prevent items from being too small */
+.results-carousel .item video {
+  min-width: 100%; /* Ensures that the image fills the container width */
+  min-height: 100%; /* Ensures that the image fills the container height */
+  display: block;
 }
 
 .results-carousel video {

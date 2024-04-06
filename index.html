@@ -48,11 +48,11 @@
             <h1 class="title is-1 publication-title">CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                Gyeongjin Kang<sup>*</sup>,</span>
+                <A href="https://github.com/Gynjn">Gyeongjin Kang</A><sup>*</sup>,</span>
               <span class="author-block">
-                Younggeun Lee<sup>*</sup>, and </span>
+                <A href="https://github.com/Younggeun-L">Younggeun Lee</A><sup>*</sup>, and </span>
               <span class="author-block">
-                Eunbyung Park</span>
+                <A href="https://silverbottlep.github.io/">Eunbyung Park</A></span>
 
             </div>
 
@@ -92,7 +92,7 @@
 
   <section class="hero is-light is-small">
     <div class="hero-body">
-      <div class="container">
+      <div class="container-large">
         <div class=" has-text-centered">
           <h2 class="title is-3">Performance Comparison on Objaverse Dataset</h2>
           <div id="results-carousel" class="carousel results-carousel">
@@ -133,7 +133,7 @@
 
   <section class="hero is-light is-small">
     <div class="hero-body">
-      <div class="container">
+      <div class="container-large">
         <div class=" has-text-centered">
           <h2 class="title is-3">Performance Comparison on ShapeNet Dataset</h2>
           <div id="results-carousel" class="carousel results-carousel">
@@ -179,7 +179,6 @@
     </div>
   </section>
 
-
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
@@ -214,7 +213,7 @@
               First, a 2D image feature extractor module processes all input images and generates 2D feature maps for each input image.
               hen, the unproject and aggregation module lifts the 2D features to 3D features and aggregates the unprojected 3D features into a single 3D feature. 
               The 3D feature is further processed by axis-aligned average pooling along each axis, resulting in three 2D features. 
-              These 2D features are used to generate multi-resolution triplanes, and finally, we perform the volumetric rendering to render an image using MLP.
+              These 2D features are used to generate multi-resolution triplanes and finally, we perform the volumetric rendering to render an image using MLP.
               Furthermore, 2D features are compressed by the compression module, producing the minimal sizes of the codes to be transmitted. The entire pipeline is differentiable, and we train end-to-end to optimize all learnable parameters.</p>
             <img src="./static/images/PEFT.png">
             <p align="justify">Similar to other NeRF generalization models, our approach can also
@@ -237,7 +236,27 @@
       <!-- Concurrent Work. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Comparison of optimization speed and compression degree</h2>
+          <h2 class="title is-3">Entropy Coding visualization</h2>
+					<img src="./static/images/featmap.png" style="width:100%">
+          <h2 class="title is-4" style="margin-top: 50px;">w/ Entropy Coding <strong style="color: red;">(top)</strong> &nbsp; vs. &nbsp; w/o Entropy Coding <strong style="color: red;">(bottom)</strong></h2>
+          <img src="./static/images/thist.jpg" style="width:100%">
+
+          <p align="justify">We visualize the delta feature maps across finetuning iterations using our entropy coding method.
+            The feature maps following the entropy coding, eliminate unnecessary components across the different resolutions, and sequentially get a high 
+            compression ratio resulting from quantization. The histogram shows the progress of compression during finetuning stage.
+					</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Encoding time and compression performance</h2>
 					<img src="./static/images/fixed.jpg" style="width:100%">
 
           <p align="justify">For the quantitative metrics, we report the standard
