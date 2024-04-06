@@ -129,14 +129,14 @@ body {
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 1px solid #bbb;
+  border: 10px solid #FFFFFF;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
   /* width: 768px;
   height: 256px; */
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 /* Optionally, you can set a minimum width and height to prevent items from being too small */
