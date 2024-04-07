@@ -127,9 +127,10 @@ body {
 } */
 
 .results-carousel .item {
-  margin: 5px;
+  margin: 7px;
   overflow: hidden;
-  border: 10px solid #FFFFFF;
+  border: 5px solid #FFFFFF;
+  outline: 3px solid #bbb;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
