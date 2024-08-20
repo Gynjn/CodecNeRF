@@ -100,37 +100,37 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-steve">
               <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/t1.mp4"
+                <source src="./static/videos/deer.mp4"
                         type="video/mp4">
               </video>
             </div>                       
             <div class="item item-shiba">
               <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/t2.mp4"
+                <source src="./static/videos/zebra.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-fullbody">
               <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/t3.mp4"
+                <source src="./static/videos/hydrant.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-blueshirt">
               <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/t4.mp4"
+                <source src="./static/videos/bus.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-blueshirt">
               <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/t5.mp4"
+                <source src="./static/videos/camera.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-blueshirt">
               <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/t6.mp4"
+                <source src="./static/videos/cake.mp4"
                         type="video/mp4">
               </video>
             </div>                        
@@ -143,41 +143,41 @@
     <div class="hero-body">
       <div class="container">
         <div class=" has-text-centered">
-          <h2 class="title is-3">Performance Comparison on ShapeNet Dataset</h2>
+          <h2 class="title is-3">Performance Comparison on GSO Dataset</h2>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-steve">
               <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/c1.mp4"
+                <source src="./static/videos/din.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-chair-tp">
               <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/cc1.mp4"
+                <source src="./static/videos/pop.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-shiba">
               <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/c2.mp4"
+                <source src="./static/videos/and.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-fullbody">
               <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/cc2.mp4"
+                <source src="./static/videos/table.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-toby">
               <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/c3.mp4"
+                <source src="./static/videos/eagle.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-toby">
               <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/cc3.mp4"
+                <source src="./static/videos/pot.mp4"
                         type="video/mp4">
               </video>
             </div>            
@@ -194,11 +194,11 @@
     <p class="title is-3 mt-5 has-text-centered"> Abstract </p>
     <p class="content is-size-6 has-text-left">
       Neural Radiance Fields (NeRF) have achieved huge success in effectively capturing and representing 3D objects and scenes. 
-      However, several factors have impeded its further proliferation as next-generation 3D media. 
-      To establish a ubiquitous presence in everyday media formats, such as images and videos, it is imperative to devise a solution that effectively fulfills three key objectives: fast encoding and decoding time, compact model sizes, and high-quality renderings. 
-      Despite significant advancements, a comprehensive algorithm that adequately addresses all objectives has yet to be fully realized. 
-      In this work, we present <b>CodecNeRF</b>, a neural codec for NeRF representations, consisting of a novel encoder and decoder architecture that can generate a NeRF representation in a single forward pass. 
-      Furthermore, inspired by the recent parameter-efficient finetuning approaches, we develop a novel finetuning method to efficiently adapt the generated NeRF representations to a new test instance, leading to high-quality image renderings and compact code sizes. The proposed CodecNeRF, a newly suggested encoding-decoding-finetuning pipeline for NeRF, achieved unprecedented compression performance of more than 150x and 20x reduction in encoding time while maintaining (or improving) the image quality on widely used 3D object datasets, such as ShapeNet and Objaverse.
+      However, to establish a ubiquitous presence in everyday media formats, such as images and videos, we need to fulfill three key objectives: 1. fast encoding and decoding time, 2. compact model sizes, and 3. high-quality renderings. 
+      Despite recent advancements, a comprehensive algorithm that adequately addresses all objectives has yet to be fully realized. 
+      In this work, we present <b>CodecNeRF</b>, a neural codec for NeRF representations, consisting of an encoder and decoder architecture that can generate a NeRF representation in a single forward pass. 
+      Furthermore, inspired by the recent parameter-efficient finetuning approaches, we propose a finetuning method to efficiently adapt the generated NeRF representations to a new test instance, leading to high-quality image renderings and compact code sizes. 
+      The proposed CodecNeRF, a newly suggested encoding-decoding-finetuning pipeline for NeRF, achieved unprecedented compression performance of more than 100x and remarkable reduction in encoding time while maintaining (or improving) the image quality on widely used 3D object datasets.      
     </p>
       <!--/ Abstract. -->
 
@@ -214,16 +214,16 @@
       <!-- Concurrent Work. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Codec NeRF Pipeline</h2>
+          <h2 class="title is-3">CodecNeRF Pipeline</h2>
           <div class="content has-text-justified">
-            <img src="./static/images/overall_arch.png">
+            <img src="./static/images/overall_arch_AAAI2.jpg">
             <p align="justify">Given N input images from different viewpoints, the goal is to produce a NeRF representation (multi-resolution triplanes).
               First, a 2D image feature extractor module processes all input images and generates 2D feature maps for each input image.
-              hen, the unproject and aggregation module lifts the 2D features to 3D features and aggregates the unprojected 3D features into a single 3D feature. 
+              Then, the unproject and aggregation module lifts the 2D features to 3D features and aggregates the unprojected 3D features into a single 3D feature. 
               The 3D feature is further processed by axis-aligned average pooling along each axis, resulting in three 2D features. 
               These 2D features are used to generate multi-resolution triplanes and finally, we perform the volumetric rendering to render an image using MLP.
               Furthermore, 2D features are compressed by the compression module, producing the minimal sizes of the codes to be transmitted. The entire pipeline is differentiable, and we train end-to-end to optimize all learnable parameters.</p>
-            <img src="./static/images/PEFT.png">
+            <img src="./static/images/PEFT_AAAI_4.jpg" style="width:80%; display: block; margin: 0 auto;">
             <p align="justify">Similar to other NeRF generalization models, our approach can also
               leverage fine-tuning of NeRF representations to enhance visual quality for new
               scenes during testing time. We propose to adapt parameter-efficient finetuning (PEFT) in our test time optimization.
@@ -245,9 +245,9 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Entropy Coding visualization</h2>
-					<img src="./static/images/featmap.png" style="width:100%">
+					<img src="./static/images/featmap.jpg" style="width:80%; display: block; margin: 0 auto;">
           <h2 class="title is-4" style="margin-top: 50px;">w/ Entropy Coding <strong style="color: red;">(top)</strong> &nbsp; vs. &nbsp; w/o Entropy Coding <strong style="color: red;">(bottom)</strong></h2>
-          <img src="./static/images/thist.jpg" style="width:100%">
+          <img src="./static/images/tensor_hist.jpg" style="width:100%">
 
           <p align="justify">We visualize the delta feature maps across finetuning iterations using our entropy coding method.
             The feature maps following the entropy coding, eliminate unnecessary components across the different resolutions, and sequentially get a high 
@@ -265,16 +265,16 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Encoding time and compression performance</h2>
-					<img src="./static/images/fixed.jpg" style="width:100%">
+					<img src="./static/images/obj_gso.jpg" style="width:100%">
 
           <p align="justify">For the quantitative metrics, we report the standard
             image quality measurements, PSNR, SSIM, and MS-SSIM. We also measure the
             storage requirements of the representation to show the compression performance
-            of our method. Our parameter efficient methods show that only with 150x memory we can store or transmit the 3D representation with better quality compared
-            to the baseline method. Due to the improved generalization capability of our
+            of our method. Due to the improved generalization capability of our
             method, we outperform the per-scene optimization-based baseline, Triplanes,
             in novel view synthesis. Remarkably, the PEFT method showed comparable or
-            better performance across the data with fewer trainable parameters.
+            better performance across the data with fewer trainable parameters. 
+            Left two figures depict the results on the Objaverse dataset, and right two figures represent the results on the GSO dataset.
 					</p>
 
         </div>
@@ -297,7 +297,8 @@
     });
 
   </script>
-  
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>

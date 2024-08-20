@@ -129,9 +129,9 @@ body {
 .results-carousel .item {
   margin: 7px;
   overflow: hidden;
-  border: 5px solid #FFFFFF;
+  border: 0px solid #FFFFFF;
   outline: 3px solid #bbb;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0;
   font-size: 0;
   /* width: 768px;
