@@ -1,0 +1,16 @@
+expname = finetune
+ckptdir = checkpoints
+data_path = ./data/camera
+camera_path = ./data/One2345_training_pose.json
+outdir = ft_out
+img_hw = [256, 256]
+N_rand = 4096
+chunk_size = 8192
+lrate_mlp = 1e-3
+lrate_feat = 5e-3
+trank = 4
+lrank = 4
+alpha = 4.0
+N_samples = 64
+N_importance = 64
+white_bkgd = True
