@@ -1,14 +1,18 @@
 # CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis
 
 [[`arXiv`](https://arxiv.org/abs/2404.04913)]
-[[`Project Page`](https://gynjn.github.io/Codec-NeRF/)]
+[[`Project Page`](https://gynjn.github.io/CodecNeRF/)]
 
 This repository contains code for "CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis".
 
-## Requirements
+Clone the repository:
+```
+git clone https://github.com/Gynjn/CodecNeRF.git
+```
+
+## Setting up Environment
 
 ### Install required packages (CUDA 11.8 example)
-
 ```
 conda create -n codecnerf python=3.10 -y
 conda activate codecnerf
@@ -18,17 +22,18 @@ pip install opencv-python imageio imageio-ffmpeg timm configargparse einops dahu
 pip install -U xformers --index-url https://download.pytorch.org/whl/cu118
 ```
 
-1. Download the pretrained model weights from https://huggingface.co/anonymous-submit/submission/tree/main place them to checkpoints folder.
+# Run example
+Download the pretrained model weights from https://huggingface.co/anonymous-submit/submission/tree/main place them to checkpoints folder.
 
-2. Run finetune (ec means W/ entropy coding).
-    ```
-    python finetune.py --config configs/finetune.txt
-    python finetune_ec.py --config configs/finetune_ec.txt
-    ```
-    If you want to perform entropy coding on tensor and MLP both, then
-    ```
-    python finetune_ec_weight.py --config configs/finetune_ec_weight.txt
-    ```
+Run finetune (ec means W/ entropy coding).
+  ```
+  python finetune.py --config configs/finetune.txt
+  python finetune_ec.py --config configs/finetune_ec.txt
+  ```
+  If you want to perform entropy coding on tensor and MLP both, then
+  ```
+  python finetune_ec_weight.py --config configs/finetune_ec_weight.txt
+  ```
 
 We provide a few examples in the configuration folder:
 
@@ -49,3 +54,14 @@ We provide a few examples in the configuration folder:
   `N_importance`, the number of point in importance sampling;
 
 More options refer to the `opt.py`.
+
+## Citing CodecNeRF
+
+```
+@article{kang2024codecnerf,
+  title={CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis},
+  author={Kang, Gyeongjin and Lee, Younggeun and Park, Eunbyung},
+  journal={arXiv preprint arXiv:2404.04913},
+  year={2024}
+}
+```
