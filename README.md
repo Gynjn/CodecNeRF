@@ -1,7 +1,9 @@
 # CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis
 
+[[`arXiv`](https://arxiv.org/abs/2404.04913)]
+[[`Project Page`](https://gynjn.github.io/Codec-NeRF/)]
 
-We provide the finetuning code of paper "CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis".
+This repository contains code for "CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis".
 
 ## Requirements
 
